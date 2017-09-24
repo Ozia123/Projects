@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/Images">
+        <file>Images/background.png</file>
+        <file>Images/icon.png</file>
+        <file>Images/send_disabled.png</file>
+        <file>Images/send_hover.png</file>
+        <file>Images/send_normal.png</file>
+        <file>Images/send_pressed.png</file>
+        <file>Images/settings_hover.png</file>
+        <file>Images/settings_normal.png</file>
+        <file>Images/settings_pressed.png</file>
+    </qresource>
+</RCC>

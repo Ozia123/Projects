@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ClientInterface</class>
+ <widget class="QMainWindow" name="ClientInterface">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>820</width>
+    <height>456</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>AA messanger</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="userresources.qrc">
+    <normaloff>:/Images/Images/icon.png</normaloff>:/Images/Images/icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#ClientInterface {background-color:white;}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>236</x>
+      <y>9</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Tahoma'; font-size:11pt;&quot;&gt;IP:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="settings">
+    <property name="geometry">
+     <rect>
+      <x>786</x>
+      <y>9</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#settings {
+    background-color: transparent;
+    border-image: url(:/Images/Images/settings_normal.png);
+    background: none;
+    background-repeat: none;
+}
+
+#settings:hover {
+    border-image: url(:/Images/Images/settings_hover.png);
+}
+
+#settings:pressed {
+    border-image: url(:/Images/Images/settings_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="ChatArea">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>50</y>
+      <width>601</width>
+      <height>371</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#ChatArea {
+    background-image:url(:/Images/Images/background.png);
+    border:1px solid #e7e7e7;
+    font-family:Tahoma;
+    font-size:13px;
+    color:#111111;
+}</string>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Tahoma'; font-size:13px; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>418</y>
+      <width>561</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#textEdit {
+    font-family: Tahoma;
+    font-size: 12px;
+    padding: 3px 0 3px 0;
+    border: 0px;
+}</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_WriteAMessage">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>422</y>
+      <width>111</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_WriteAMessage {
+    background-color: transparent;
+    background: none;
+}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Tahoma'; font-size:9pt; color:#cbcbcc;&quot;&gt;Write a message...&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="listWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>49</y>
+      <width>221</width>
+      <height>411</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#listWidget {border: 1px solid #e7e7e7;font-family:Tahoma;font-size:15px;}</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="send">
+    <property name="geometry">
+     <rect>
+      <x>786</x>
+      <y>422</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#send {
+    background-color: transparent;
+    border-image: url(:/Images/Images/send_normal.png);
+    background: none;
+    background-repeat: none;
+}
+
+#send:disabled {
+    border-image: url(:/Images/Images/send_disabled.png);
+}
+
+#send:hover {
+    border-image: url(:/Images/Images/send_hover.png);
+}
+
+#send:pressed {
+    border-image: url(:/Images/Images/send_pressed.png);
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>367</x>
+      <y>9</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'Tahoma'; font-size:11pt;&quot;&gt;Port:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="frame">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>0</y>
+      <width>221</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame {  border: 1px solid #e7e7e7; background-color:white;}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="Username">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>-3</y>
+       <width>141</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">#Username {border:0px;font-family:Tahoma;font-size:15px;}</string>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;Username&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frame_2">
+    <property name="geometry">
+     <rect>
+      <x>219</x>
+      <y>0</y>
+      <width>611</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#frame_2 {  border: 1px solid #e7e7e7; background-color:white;}</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>161</x>
+      <y>17</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#label_4 {border:1px solid black; border-radius:7px; background-color:black; color:white;text-align:center;font-family:Tahoma;}</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>157</x>
+      <y>17</y>
+      <width>47</width>
+      <height>13</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;color:white;&quot;&gt;you&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="IP">
+    <property name="geometry">
+     <rect>
+      <x>258</x>
+      <y>17</y>
+      <width>101</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#IP {border:0px;font-family:'Tahoma';font-size:9pt;color:#cbcbcc;}</string>
+    </property>
+    <property name="text">
+     <string>000.000.000.000</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="Port">
+    <property name="geometry">
+     <rect>
+      <x>401</x>
+      <y>17</y>
+      <width>41</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">#Port { border:0px;font-family:'Tahoma';font-size:9pt;color:#cbcbcc;}</string>
+    </property>
+    <property name="text">
+     <string>77777</string>
+    </property>
+   </widget>
+   <zorder>ChatArea</zorder>
+   <zorder>frame_2</zorder>
+   <zorder>label</zorder>
+   <zorder>settings</zorder>
+   <zorder>textEdit</zorder>
+   <zorder>label_WriteAMessage</zorder>
+   <zorder>listWidget</zorder>
+   <zorder>send</zorder>
+   <zorder>label_2</zorder>
+   <zorder>frame</zorder>
+   <zorder>label_4</zorder>
+   <zorder>label_5</zorder>
+   <zorder>IP</zorder>
+   <zorder>Port</zorder>
+  </widget>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="userresources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
